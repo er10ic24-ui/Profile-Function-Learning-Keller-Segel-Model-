@@ -313,10 +313,19 @@ axins.plot(nodes, Learned_Kernel, label = 'Learned kernel', markersize = 5, colo
 
 
 # Set zoomed region
-axins.set_xlim(0, 0.02)
-axins.set_ylim(5000, 8000)
-# axins.set_title("Zoom In", fontsize=10)
-
+if d == 1: 
+    axins.set_xlim(0, 0.02)
+    axins.set_ylim(8000, 12000)
+    # axins.set_title("Zoom In", fontsize=10)
+elif d == 2: 
+    axins.set_xlim(0, 0.02) 
+    axins.set_ylim(2000, 3500)
+elif d == 3: 
+    axins.set_xlim(0, 0.02) 
+    axins.set_ylim(20000, 30000) 
+elif d == 4: 
+    axins.set_xlim(0, 0.02) 
+    axins.set_ylim(7000, 8500)
 plt.show()
 
 
@@ -325,7 +334,6 @@ plt.show()
 knot_num = np.size(these_knots)
 """ 
 if d == 1:
-    path = '/Users/chenqian/Desktop/python/Particle_method_2024/KS_particle_trajectory/'
     with open(path +'KS_1D_Particle_50_Learned_cut_off_' + str(r_c) + '_t_0.2_Chi_' + str(Chi) + '_knot_'  + str(knot_num) + '_' + str(number_of_initials) + '.npy', 'wb') as f:
     # with open(path +'KS_Particle_cut_off_50_t_0.05_Chi_' + str(Chi) + '_'  + str(number_of_initials) + '.npy', 'rb') as f:
         np.save(f, BIG_Data)  # save the initial data for the particle trajectories 
@@ -339,7 +347,6 @@ if d == 1:
         np.save(f, b_max) 
         
 elif d == 2:
-    path = '/Users/chenqian/Desktop/python/Particle_method_2024/KS_particle_trajectory/'
     with open(path +'KS_2D_Particle_50_Learned_cut_off_' + str(r_c) + '_t_0.2_Omega_' + str(omega) + '_knot_'  + str(knot_num) + '_' + str(number_of_initials) + '.npy', 'wb') as f:
         np.save(f, BIG_Data)  # save the initial data for the particle trajectories 
         np.save(f, alpha)
@@ -352,7 +359,6 @@ elif d == 2:
         np.save(f, b_max)
 
 elif d == 3 :
-    path = '/Users/chenqian/Desktop/python/Particle_method_2024/KS_particle_trajectory/'
     with open(path +'KS_3D_Particle_50_Learned_cut_off_' + str(r_c) + '_t_0.2_Omega_' + str(omega) + '_knot_'  + str(knot_num) + '_' + str(number_of_initials) + '.npy', 'wb') as f:
         np.save(f, BIG_Data)  # save the initial data for the particle trajectories 
         np.save(f, alpha)
@@ -365,7 +371,6 @@ elif d == 3 :
         np.save(f, b_max) 
 
 elif d == 4 :
-    path = '/Users/chenqian/Desktop/python/Particle_method_2024/KS_particle_trajectory/'
     with open(path +'KS_4D_Particle_50_Learned_reg_' + str(epsilon) + '_t_0.2_Omega_' + str(omega) + '_knot_'  + str(knot_num) + '_' + str(number_of_initials) + '.npy', 'wb') as f:
     # with open(path +'KS_4D_Particle_50_Learned_cut_off_' + str(r_c) + '_t_0.2_Omega_' + str(omega) + '_knot_'  + str(knot_num) + '_' + str(number_of_initials) + '.npy', 'wb') as f:
         np.save(f, BIG_Data)  # save the initial data for the particle trajectories 
