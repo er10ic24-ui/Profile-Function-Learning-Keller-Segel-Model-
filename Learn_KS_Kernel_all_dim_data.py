@@ -22,7 +22,7 @@ number_of_initials = 500
 
 d = 1
 if d == 1:
-    Chi = 0.35
+    Chi = 0.55
     path = '/Users/chenqian/Desktop/python/Particle_method_2024/KS_particle_trajectory/'
     r_c = 0.01
     with open(path +'KS_1D_Particle_50_cut_off_' + str(r_c) + '_t_0.2_Chi_' + str(Chi) + '_'  + str(number_of_initials) + '.npy', 'rb') as f:
@@ -133,7 +133,7 @@ if d == 3:
 
 if d == 4: 
     number_of_initials = 500
-    omega = 4.0 
+    omega = 1.0 
     epsilon = 1e-4
     r_c = 0.05
     path = '/Users/chenqian/Desktop/python/Particle_method_2024/KS_particle_trajectory/'
