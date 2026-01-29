@@ -23,10 +23,9 @@ number_of_initials = 500
 d = 1
 if d == 1:
     Chi = 0.55
-    path = '/Users/chenqian/Desktop/python/Particle_method_2024/KS_particle_trajectory/'
+    path = 'data/'
     r_c = 0.01
     with open(path +'KS_1D_Particle_50_cut_off_' + str(r_c) + '_t_0.2_Chi_' + str(Chi) + '_'  + str(number_of_initials) + '.npy', 'rb') as f:
-    # with open(path +'KS_Particle_cut_off_50_t_0.05_Chi_' + str(Chi) + '_'  + str(number_of_initials) + '.npy', 'rb') as f:
         BIG_X = np.load(f) 
         # x = np.load(f)
         h = np.load(f)
@@ -57,10 +56,8 @@ if d == 1:
 
 if d == 2: 
     omega = 2.0
-    path = '/Users/chenqian/Desktop/python/Particle_method_2024/KS_particle_trajectory/'
+    path = 'data/'
     r_c = 0.01
-    # with open(path +'KS_2DParticle_ture_kernel_50_t_0.2_Omega_' + str(omega) + '_'  + str(number_of_initials) + '.npy', 'rb') as f:
-    # with open(path + 'KS_2DParticle_cut_off_50_t_0.2_Omega_' + str(omega) + '_'  + str(number_of_initials) + '.npy', 'rb') as f:
     with open(path + 'KS_2D_Particle_50_cut_off_' + str(r_c) + '_t_0.2_Omega_' + str(omega) + '_'  + str(number_of_initials) + '.npy', 'rb') as f:
         BIG_Data = np.load(f)
         BIG_X = np.load(f) 
@@ -93,8 +90,7 @@ if d == 2:
 if d == 3: 
     omega = 2.0 
     r_c = 0.01
-    path = '/Users/chenqian/Desktop/python/Particle_method_2024/KS_particle_trajectory/'
-    
+    path = 'data/'
     with open(path + 'KS_3D_Particle_50_cut_off_' + str(r_c) + '_t_0.2_Omega_' + str(omega) + '_'  + str(number_of_initials) + '.npy', 'rb') as f:
         BIG_Data = np.load(f)
         # BIG_X = np.load(f)
@@ -137,7 +133,6 @@ if d == 4:
     epsilon = 1e-4
     r_c = 0.05
     path = '/Users/chenqian/Desktop/python/Particle_method_2024/KS_particle_trajectory/'
-    
     # with open(path + 'KS_4D_Particle_50_reg_' + str(epsilon) + '_t_0.2_Omega_' + str(omega) + '_'  + str(number_of_initials) + '.npy', 'rb') as f:
     with open(path + 'KS_4D_Particle_50_cut_off_' + str(r_c) + '_t_0.2_Omega_' + str(omega) + '_'  + str(number_of_initials) + '.npy', 'rb') as f:
         BIG_Data = np.load(f)
