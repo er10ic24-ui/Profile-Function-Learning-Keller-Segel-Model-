@@ -54,7 +54,7 @@ These figures summarize the main findings of the study without requiring access 
 ```
 .
 ├── data/
-│   ├── deterministic_1d/
+│   ├── KS_1D_Particle_50_cut_off_0.01_t_0.2_Chi_0.55_500.npy
 │   ├── deterministic_2d/
 │   └── deterministic_3d/
 ├── notebooks/
