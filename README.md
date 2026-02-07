@@ -24,6 +24,14 @@ In this project, the model is studied through a particle system representation, 
 Due to file size limitations, only deterministic particle trajectories in 1D, 2D, and 3D are included in the repository.
 Higher-dimensional and stochastic trajectory data were used to generate figures but are not uploaded.
 
+### 2. Learning of Profile Functions
+	•	Learned interaction/profile functions for:
+	•	Deterministic particle systems
+	•	Stochastic particle systems
+	•	Results reported for all considered dimensions
+
+These learned profiles characterize the effective interaction structure inferred from particle trajectories.
+
 
 ### Particle trajectories for the Keller–Segel model
 <p align="center">
