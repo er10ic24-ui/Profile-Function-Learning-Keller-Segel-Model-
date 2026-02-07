@@ -58,7 +58,16 @@ These figures summarize the main findings of the study without requiring access 
 │   ├── KS_2D_Particle_50_cut_off_0.01_t_0.2_Omega_2.0_500.npy
 │   └── KS_3D_Particle_50_cut_off_0.01_t_0.2_Omega_2.0_500.npy
 ├── figures/
-│   ├── deterministic_trajectories/
+│   ├── KS_2D_profile_comparison_omega_2_knot_20.png
+│   ├── KS_2D_trajectory_comparison_unif_omega_1_knot_20.png
+│   ├── KS_2D_trajectory_comparison_unif_omega_2_knot_20.png
+│   ├── KS_2D_trajectory_comparison_unif_omega_4_knot_20.png
+│   ├── KS_3D_profile_comparison_omega_2_knot_25.png
+│   ├── KS_3D_trajectory_comparison_unif_omega_1_knot_25.png
+│   ├── KS_3D_trajectory_comparison_unif_omega_2_knot_25.png
+│   ├── KS_3D_trajectory_comparison_unif_omega_4_knot_25.png
+│   ├── KS_4D_SDE_kernel_comparison_chi_2_knot_20.png
+
 │   ├── stochastic_trajectories/
 │   ├── learned_profiles/
 │   └── learned_trajectories/
