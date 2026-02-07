@@ -93,7 +93,15 @@ Full numerical experiments and analysis are provided in the accompanying preprin
 ### Original vs Reconstructed Particle Trajectories
 
 <p align="center">
-  <img src="figures/learned_trajectories/trajectory_comparison_2d.png" width="600">
+  <img src="figures/KS_2D_trajectory_comparison_unif_omega_1_knot_20.png" width="600">
+</p>
+
+<p align="center">
+  <img src="figures/KS_2D_trajectory_comparison_unif_omega_2_knot_20.png" width="600">
+</p>
+
+<p align="center">
+  <img src="figures/KS_2D_trajectory_comparison_unif_omega_4_knot_20.png" width="600">
 </p>
 
 ## Preprint
