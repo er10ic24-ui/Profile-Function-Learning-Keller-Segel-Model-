@@ -24,12 +24,12 @@ number_of_initials = 500
 # epsilon = 0 
 outer_iter = 2001 # number of iterations for the nonlinear optimization problem  
 
-d = 4
+d = 2
 # read data 
 
     
 if d == 2: 
-    omega = 4.0
+    omega = 2.0
     epsilon = 0.01
     eta = 0.01 
     knot_num = 30
@@ -66,7 +66,7 @@ if d == 2:
 
 
 if d == 4: 
-    omega = 4.0
+    omega = 2.0
     epsilon = 0.01
     eta = 0.01 
     knot_num = 15
@@ -78,15 +78,11 @@ if d == 4:
         BIG_Noise = np.load(f) # load the noise for the particle trajectories 
         alpha = np.load(f)    # laod the coefficients of the basis functions 
         these_knots = np.load(f)  # load the positions of the knot points         
-        # np.save(f, h) 
-        # np.save(f, tau)   
         omega = np.load(f)
         observed_time_step = np.load(f) 
         a_min = np.load(f) 
         b_max = np.load(f) 
         
-        
-    
     N_time = int(T / tau)
     dt = tau 
     sigma = np.sqrt(2) * eta 
@@ -101,15 +97,6 @@ L = np.shape(BIG_Data)[1]   # number of time steps in the data
 Final_time_step = int(observed_time_step / tau)
 Stopping_time = np.around(tau * outer_iter, decimals = 2) # Final time 
     
-""" 
-nodes = np.linspace(a_min, b_max, 200)
-number_of_nodes = np.size(nodes)
-nodes_1 = np.copy(nodes) 
-basis_funcs = patsy.bs(nodes, knots=these_knots[:-1], degree = 3, lower_bound = these_knots[0], upper_bound = these_knots[-1])
-num_of_interp = np.shape(basis_funcs)[1]
-""" 
-    
-# check !!! 
 def Interp_func(a, b, coeff, node_num = 200):
     nodes = np.linspace(a, b, node_num)
     basis_funcs = basis_funcs = patsy.bs(nodes, knots=these_knots[:-1], degree = 3, lower_bound = these_knots[0], upper_bound = these_knots[-1]) # 
@@ -121,17 +108,10 @@ def Interp_func(a, b, coeff, node_num = 200):
 # Interpolation function 
 Interpolant = Interp_func(a_min, b_max, alpha)
     
-"""  
-Interp_func = []
-for m in range(num_of_interp):
-    interp_func = interp1d(nodes, basis_funcs[:,m], fill_value = 'extrapolate')
-    Interp_func.append(interp_func)
-"""     
+  
 # save the data for each time 
 observed_time = np.arange(0, Stopping_time + observed_time_step , observed_time_step)
 record_time_step = int(observed_time_step / dt) 
-
-
 
 if d == 2: 
     BIG_X =[]; BIG_Y = []   # Now we have two components 
