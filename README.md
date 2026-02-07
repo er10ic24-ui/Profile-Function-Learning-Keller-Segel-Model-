@@ -55,8 +55,8 @@ These figures summarize the main findings of the study without requiring access 
 .
 ├── data/
 │   ├── KS_1D_Particle_50_cut_off_0.01_t_0.2_Chi_0.55_500.npy
-│   ├── deterministic_2d/
-│   └── deterministic_3d/
+│   ├── KS_2D_Particle_50_cut_off_0.01_t_0.2_Omega_2.0_500.npy
+│   └── KS_3D_Particle_50_cut_off_0.01_t_0.2_Omega_2.0_500.npy
 ├── notebooks/
 │   ├── trajectory_generation.ipynb
 │   ├── learning_profiles.ipynb
