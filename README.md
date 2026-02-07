@@ -66,11 +66,12 @@ These figures summarize the main findings of the study without requiring access 
 │   ├── KS_3D_trajectory_comparison_unif_omega_1_knot_25.png
 │   ├── KS_3D_trajectory_comparison_unif_omega_2_knot_25.png
 │   ├── KS_3D_trajectory_comparison_unif_omega_4_knot_25.png
-│   ├── KS_4D_SDE_kernel_comparison_chi_2_knot_20.png
-
-│   ├── stochastic_trajectories/
-│   ├── learned_profiles/
-│   └── learned_trajectories/
+│   ├── KS_4D_SDE_kernel_comparison_chi_20_knot_15.png
+│   ├── KS_4D_profile_comparison_omega_1_knot_30.png
+│   ├── KS_SDE_2D_profile_comparison_omega_2_unifknot_30.png
+│   ├── KS_SDE_2D_trajectory_comparison_chi_1.png
+│   ├── KS_SDE_2D_trajectory_comparison_chi_2.png
+│   └── KS_SDE_2D_trajectory_comparison_chi_4.png
 ├── KS_SDE_learn_Kernel_all_dim.py
 ├── KS_data_distribution.py
 ├── KS_SDE_learned_trajectory.py
