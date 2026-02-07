@@ -127,6 +127,6 @@ Full numerical experiments and analysis are provided in the accompanying preprin
 A detailed description of the model, methodology, and numerical results
 is available in the following preprint:
 
-- **Title:** Learning Interaction Kernels in the Keller–Segel Particle System
-- **Authors:** Chi-An Chen et al.
-- **Link:** https://arxiv.org/abs/XXXX.XXXXX
+- **Title:** Unified Learning of the Profile Function in Discrete Keller-Segel Models
+- **Authors:** Chi-An Chen, Chun Liu, Ming Zhong.
+- **Link:** http://arxiv.org/abs/2510.23381
