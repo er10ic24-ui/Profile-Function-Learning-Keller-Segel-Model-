@@ -18,7 +18,7 @@ from scipy.spatial.distance import pdist
 import patsy # for comparison
 import KS_data_distribution as KS
 
-number_of_initials = 500
+number_of_initials = 100
 observed_time_step = 1e-3 
 dt = 1e-4 
 record_time_step = int(observed_time_step / dt) 
@@ -61,7 +61,6 @@ if d == 2:
     a_min = np.min(a_min); b_max = np.max(b_max)
 
 if d == 4: 
-    number_of_initials = 500
     omega = 2.0 
     epsilon = 1e-2
     # N_par = 50 
