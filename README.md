@@ -57,15 +57,23 @@ These figures summarize the main findings of the study without requiring access 
 │   ├── KS_1D_Particle_50_cut_off_0.01_t_0.2_Chi_0.55_500.npy
 │   ├── KS_2D_Particle_50_cut_off_0.01_t_0.2_Omega_2.0_500.npy
 │   └── KS_3D_Particle_50_cut_off_0.01_t_0.2_Omega_2.0_500.npy
-├── notebooks/
-│   ├── trajectory_generation.ipynb
-│   ├── learning_profiles.ipynb
-│   └── learned_trajectories.ipynb
 ├── figures/
 │   ├── deterministic_trajectories/
 │   ├── stochastic_trajectories/
 │   ├── learned_profiles/
 │   └── learned_trajectories/
+├── KS_SDE_learn_Kernel_all_dim.py
+├── KS_data_distribution.py
+├── KS_SDE_learned_trajectory.py
+├── Keller_Segel_2D_particle_trajectory.py
+├── Keller_Segel_3D_particle_trajectory.py
+├── Keller_Segel_4D_particle_trajectory.py
+├── Keller_Segel_SDE_2D_particle_trajectory.py
+├── Keller_Segel_SDE_4D_particle_trajectory.py
+├── Learn_KS_Kernel_all_dim_data.py
+├── Learn_KS_Kernel_all_dim_data_adaptive.py
+├── Learn_KS_Particle_trajectories_all_dim_data.py
+└── learned_trajectories.ipynb
 ├── README.md
 ```
 
