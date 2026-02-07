@@ -32,9 +32,75 @@ Higher-dimensional and stochastic trajectory data were used to generate figures 
 
 These learned profiles characterize the effective interaction structure inferred from particle trajectories.
 
+### 3. Learned Particle Trajectories
+	•	Reconstructed particle trajectories using learned interaction functions
+	•	Comparisons performed across:
+	•	Dimensions (2D, 3D, 4D)
+	•	Deterministic vs stochastic dynamics
 
-### Particle trajectories for the Keller–Segel model
+
+## Results
+
+All figures corresponding to:
+	•	Particle trajectories
+	•	Learned profile functions
+	•	Learned vs true dynamics
+
+are provided in the figures/ directory.
+
+These figures summarize the main findings of the study without requiring access to the full trajectory datasets.
+
+## Repository Structure 
+```
+.
+├── data/
+│   ├── deterministic_1d/
+│   ├── deterministic_2d/
+│   └── deterministic_3d/
+├── notebooks/
+│   ├── trajectory_generation.ipynb
+│   ├── learning_profiles.ipynb
+│   └── learned_trajectories.ipynb
+├── figures/
+│   ├── deterministic_trajectories/
+│   ├── stochastic_trajectories/
+│   ├── learned_profiles/
+│   └── learned_trajectories/
+├── README.md
+```
+
+## Notes on Reproducibility
+	•	All figures in this repository are generated from the accompanying code.
+	•	Full stochastic and high-dimensional trajectory datasets are omitted due to size constraints but can be regenerated using the provided scripts.
+
+## Scope and Limitations
+	•	This repository focuses on particle-based learning of the Keller–Segel model.
+	•	Large-scale data storage is intentionally avoided.
+	•	Numerical parameter choices and implementation details are discussed within the notebooks.
+
+## Related Work
+
+This project is part of an ongoing research effort on particle methods, learning interaction kernels, and variational formulations of collective dynamics. 
+
+## Citation
+If you use or build upon this work, please cite appropriately or contact the author for further details.
+
+## Representative Results
+
+Below we show representative examples of learned particle dynamics.
+Full numerical experiments and analysis are provided in the accompanying preprint.
+
+### Original vs Reconstructed Particle Trajectories
+
 <p align="center">
-  <img src="figures/particle_trajectory_2d.png" width="500">
+  <img src="figures/learned_trajectories/trajectory_comparison_2d.png" width="600">
 </p>
-Figure 1: 2D particle trajectories colored by time.
+
+## Preprint
+
+A detailed description of the model, methodology, and numerical results
+is available in the following preprint:
+
+- **Title:** Learning Interaction Kernels in the Keller–Segel Particle System
+- **Authors:** Chi-An Chen et al.
+- **Link:** https://arxiv.org/abs/XXXX.XXXXX
